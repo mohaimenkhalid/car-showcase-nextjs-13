@@ -6,8 +6,13 @@ import React from "react";
 export default function Home() {
   return (
     <main className={styles.main}>
-      <div>Main body home page</div>
-        <Link href="/about">About page ---></Link>
+      <h2>Main body home page</h2>
+       <h3>
+           <Link href="/about">About page</Link>
+       </h3>
+        <h3>
+            <Link href="/users">Users List</Link>
+        </h3>
       {/*<Hero />*/}
     </main>
   )

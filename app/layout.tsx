@@ -1,8 +1,8 @@
 import "./globals.css";
-
+import  type {Metadata} from 'next'
 import { Footer, NavBar } from "@/components";
 
-export const metadata = {
+export const metadata: Metadata = {
     title: "Home page",
     description: "Discover world's best car showcase application",
 };
