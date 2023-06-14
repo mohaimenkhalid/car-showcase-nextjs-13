@@ -11,7 +11,7 @@ export default function Home() {
            <Link href="/about">About page</Link>
        </h3>
         <h3>
-            <Link href="/users">Users List</Link>
+            <Link href="/products">Product List</Link>
         </h3>
       {/*<Hero />*/}
     </main>
