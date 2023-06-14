@@ -2,9 +2,18 @@ import React, {Suspense} from 'react';
 import getProduct from "@/lib/getProduct";
 import getUsers from "@/lib/getAllUserList";
 import UserList from "./components/UserList";
+import {Metadata} from "next";
 type Params = {
     params: {
         productId: string
+    }
+}
+
+export async function generateMetadata({params: {productId}}: Params): Promise<Metadata> {
+    const product = await getProduct(productId)
+    return {
+        title: product.title,
+        description: `This a generated description with ${product.title}`,
     }
 }
 
